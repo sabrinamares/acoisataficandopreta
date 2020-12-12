@@ -1,0 +1,78 @@
+section {
+    padding-top: 4rem;
+}
+
+.header__busca {
+    background-image: url('../img/6.jpg');
+    height: 300px;
+    width:100%;
+    background-size: cover;
+    position: relative;
+}
+
+.header__corres {
+    width: fit-content;
+    color: white;
+}
+
+.busca {
+    margin: auto;
+    width: fit-content;
+}
+
+#corres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#corres div {
+    width: 47%;
+    /* text-align: center; */
+    margin: 0 0rem 3rem 1rem;
+    display: flex;
+    
+}
+
+#corres div img {
+    width: 100%;
+    opacity: .9;
+    border-radius: .6rem;
+}
+
+#corres div img:hover {
+    transition: .3s;
+    opacity: 1;
+}
+
+#corres a {
+    position: relative;
+
+}
+
+#corres a h3 {
+    /* width: fit-content; */
+    /* background-color: #5f5149; */
+    color: white;
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: -2rem;
+    left:0px;
+    right:0px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .6rem;
+    font-weight: 300;
+}
+
+#corres div:hover span {
+    background-color: #c99566;
+    transition: .3s;
+}
+
+@media (max-width: 767px) {
+    #corres div {
+        width: 85%;
+    }
+}

@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+:root {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+    background-color: #EEE1D1;
+}
+
+p {
+    line-height: 2.4rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+.content--home {
+    width: 50%;
+    margin:auto; 
+}
+
+ul {
+    list-style: none;
+}
+
+.cores {
+    background-color: #d7aa2b;
+    background-color: #EEE1D1;
+    background-color: #5f5149;
+    background-color: #c99566;
+    background-color: #a65238;
+}
+
+
+nav {
+    padding:10px 12rem;
+    width: 100%;
+    background-color: #d7aa2b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav__titulo {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: black;
+
+}
+
+.nav__titulo:hover, .nav__li--web:hover{
+    color: #a65238;
+    transition: .3s;
+}
+
+.nav__span {
+    font-weight: 900;
+}
+
+.nav__ul--web {
+    display: flex;
+    align-items: center;
+    margin:0
+}
+
+.nav__li--web {
+    margin:  .5rem  1.5rem;
+    font-size: 1.2em;
+    display: flex;
+}
+
+.nav__a--web, .nav__titulo, .nav__li_img--web {
+    display:flex;
+    align-items: center;
+}
+
+.nav__img--web {
+    height: 2.2rem;
+    margin:  .5rem .8rem;
+}
+
+header {
+    padding-top: 4rem; 
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    width: fit-content;
+    font-size: 4rem;
+    /* font-weight: 600; */
+    /* bottom:0; */
+    font-family: 'Antic Slab', serif;
+    line-height: 5.2rem;
+    letter-spacing: .4rem;
+}
+
+span {
+    padding: .3rem;
+
+}
+
+.span--ladinho {
+    margin-left:4rem;
+}
+
+.span__1 {
+    background-color: #a65238;
+}
+
+.span__2 {
+    background-color:  #c99566;
+}
+
+.span__3 {
+    background-color: #d7aa2b;
+}
+
+.span__4 {
+    background-color: #5f5149;
+    color: white
+}
+
+.titulo {
+    text-align:center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 3.4rem;
+}
+
+.carrossel__section {
+    display:flex;
+    justify-content: center;
+}
+
+.carrossel {
+width: 100%;
+text-align: center;
+
+
+}
+
+.carrossel div {
+    height:300px;
+    position: relative;
+}
+
+.carrossel img {
+    height: 100%;
+}
+
+.carrossel a:hover img{
+    animation: 
+    scale-up-center
+    1s
+    both;
+}
+
+.carrossel a:hover h3 {
+    display:initial; 
+    margin-bottom: 0rem;
+    position:absolute;
+    bottom: 0px;
+    padding: 2rem;
+    left:0;
+    right:0;
+
+    color:white;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+
+    background:linear-gradient(rgba(95, 81, 73, 0),rgba(0, 0, 0, 0.7));
+    animation: 
+    scale-up-center
+    1s
+    both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+hr {
+    width: 80%;
+    margin:4rem auto;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.hr__sobre {
+    padding-top: 4rem;
+}
+
+.todos {
+    display: flex;
+    justify-content: center;
+}
+
+.todos__btn {
+    background-color: #a65238;
+    color:white;
+    border: 0;
+    padding: 2rem 8rem;
+    font-size: 1.6rem;
+    text-transform: uppercase; 
+}
+
+.todos__btn:hover {
+    background-color:#d7aa2b;
+    transition: .3s;
+
+}
+
+.quem__content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;   
+}
+
+.quem__img {
+    width: 30%;
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.quem__div {
+    margin-left: 4rem;
+}
+
+footer {
+    padding:2rem 0 1.2rem;
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #5f5149;
+    z-index: 0;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1rem;
+}
+
+footer img {
+    height: 2.8rem;
+    padding-left: .4rem;
+}
+
+@media (max-width:1024px)
+{
+    .content {
+        width: 90%;
+    }
+}
