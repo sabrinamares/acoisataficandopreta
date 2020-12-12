@@ -11,8 +11,7 @@ const allCorres = [
         link1: "https://www.instagram.com/ajuliacosta/",
         link2: "https://www.youtube.com/watch?v=ab8i6FkQOMg",
         link3: "https://www.instagram.com/ajuliacostashop/",
-    },
-    
+    }
 ]
 
 const headerImg = document.getElementById('headerImg')
