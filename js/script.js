@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.carrossel').slick({
         infinite: true,
         // dots:true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 1750,
         centerMode: true,
         arrows: true,

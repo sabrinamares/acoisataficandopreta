@@ -52,14 +52,23 @@ ul {
 
 
 nav {
-    padding:10px 12rem;
+    /* padding:1rem 12rem; */
     width: 100%;
     background-color: #d7aa2b;
     color: white;
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__content {
+    width: 80%;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+
+
 }
 
 .nav__titulo {
@@ -103,11 +112,13 @@ nav {
 
 header {
     padding-top: 4rem; 
-    height: 400px;
+    height: 40rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:auto;
+
 }
 
 .quote {
@@ -167,7 +178,7 @@ text-align: center;
 }
 
 .carrossel div {
-    height:300px;
+    height:30rem;
     position: relative;
 }
 
@@ -216,7 +227,7 @@ hr {
     width: 80%;
     margin:4rem auto;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: .1rem solid black;
 }
 
 .hr__sobre {
@@ -246,13 +257,14 @@ hr {
 .quem__content {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5rem;   
+    margin-bottom: 5rem;
+    align-items: center;
 }
 
 .quem__img {
     width: 30%;
     height: 100%;
-    border-radius: 10rem;
+    border-radius: 20rem;
 }
 
 .quem__div {
@@ -263,7 +275,7 @@ footer {
     padding:2rem 0 1.2rem;
     width: 100%;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-align: center;
     background-color: #5f5149;
     z-index: 0;
@@ -273,17 +285,120 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1rem;
+    line-height: .8rem;
 }
 
 footer img {
-    height: 2.8rem;
+    height: 2.4rem;
     padding-left: .4rem;
+}
+
+
+
+
+
+@media (width:320px){
+    h3 {
+        font-size:2rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .quote {
+        text-align: center
+        }
+
+    .carrossel div {
+        height: 25rem;
+    }
+    
+    .quem__div {
+        margin-left: 0rem;
+    }
+    
+    .quem__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quem__img {
+        width: 60%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .content--home {
+        max-width: 80%;
+    }
+
+    .todos__btn {
+        padding: 2rem 4rem;
+    }
+
+    .quote {
+        font-size: 3.8rem;
+    }
+    
+}
+
+@media (max-width:600px){
+    :root {
+        font-size: 9px;
+    }
+
+    nav {
+        padding:1rem 2rem
+    }
+
+    header {
+        height: 45rem;
+        margin: auto;
+    }
+
+    .quote {
+        max-width: 80%;
+    }
+
+    .content--home {
+        width: 80%;
+    }
+    
+    footer p {
+        font-size: 1.2rem;
+        line-height: .4rem;
+    }
+
+    footer img {
+    height: 2.1rem;
+
+    }
 }
 
 @media (max-width:1024px)
 {
     .content {
         width: 90%;
+    }
+
+    .content--home {
+        width: 70%;
+    }
+
+    .sobre {
+        text-align: justify;
+    }
+
+    .quem__bio {
+        text-align: justify;
+    }
+
+    .nav__menu--web {
+        display: none; 
+    }
+}
+
+@media (min-width: 1441px){
+    :root {
+        font-size: 12px;
     }
 }

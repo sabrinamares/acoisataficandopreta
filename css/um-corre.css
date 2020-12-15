@@ -1,9 +1,9 @@
-.header-corre__img {
+.headerCorre__img {
     width: 35%;
     margin-right: 4rem;
 }
 
-.header-corre p {
+.headerCorre p {
     width: 45%;
 }
 
@@ -28,8 +28,12 @@
     padding: 3rem 0;
 }
 
-.bio__imgs {
+.bio__img--div {
     width: 30%;
+}
+
+.bio__img {
+    width: 100%;
 }
 
 .bio__ul {
@@ -42,7 +46,7 @@
     /* background-color: khaki */
     width: fit-content;
     margin: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .redes-sociais {
@@ -70,8 +74,28 @@
     background-color:  #5f5149;
 }
 
+.banner__div {
+    width: 30%;
+}
+
 .banner img {
     max-width: 50%;
     /* height: 100%; */
 }
 
+@media (max-width:768px){
+    .headerCorre {
+        display: block;
+        height: fit-content;
+    }
+
+    .headerCorre__img {
+        width: 80%;
+        margin-right: 4rem;
+    }
+    
+    .headerCorre p {
+        width: 80%;
+        font-size: 3rem;
+    }
+}

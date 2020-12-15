@@ -5,7 +5,7 @@ const allCorres = [
     },
     {
         headerImg: "../img/fromghetto.png",
-        titulo: "fromghettotoghetto",
+        titulo: "from ghetto to ghetto",
     },
     {
         headerImg: "../img/janice.png",

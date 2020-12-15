@@ -71,7 +71,7 @@ section {
     transition: .3s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 650px) {
     #corres div {
         width: 85%;
     }
