@@ -1,3 +1,11 @@
+.cores {
+    background-color: #d7aa2b;
+    background-color: #EEE1D1;
+    background-color: #5f5149;
+    background-color: #c99566;
+    background-color: #a65238;
+}
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -41,15 +49,6 @@ h3 {
 ul {
     list-style: none;
 }
-
-.cores {
-    background-color: #d7aa2b;
-    background-color: #EEE1D1;
-    background-color: #5f5149;
-    background-color: #c99566;
-    background-color: #a65238;
-}
-
 
 nav {
     /* padding:1rem 12rem; */

@@ -26,18 +26,23 @@
     display: flex;
     justify-content: space-around;
     padding: 3rem 0;
+    /* width: 100%; */
 }
 
 .bio__img--div {
-    width: 30%;
+    display: flex;
+    width: 55%;
+    height: fit-content;
 }
 
 .bio__img {
-    width: 100%;
+    width: 50%;
+    /* height: 100%; */
+    padding: 0 .5rem;
 }
 
 .bio__ul {
-    width: 35%;
+    width: 50%;
     list-style: initial;
     list-style: circle;
 }
@@ -74,28 +79,75 @@
     background-color:  #5f5149;
 }
 
-.banner__div {
-    width: 30%;
-}
-
 .banner img {
-    max-width: 50%;
-    /* height: 100%; */
+    width: 50%;
 }
 
-@media (max-width:768px){
+@media (max-width:600px){
+    #bannerImg2 {
+        display: none;
+    }
+
+    #bannerImg1 {
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:800px){
+    nav {
+        position: initial;
+    }
+
     .headerCorre {
-        display: block;
+        flex-direction: column;
         height: fit-content;
+        width: 100%;
+        padding-top: 0rem;
     }
 
     .headerCorre__img {
-        width: 80%;
-        margin-right: 4rem;
+        width: 100%;
+        margin-right: 0rem;
     }
     
+    .bio__div {
+        flex-direction: column-reverse;
+        padding: 0 2rem;
+    }
+    
+    .bio__img--div {
+    width: 100%;
+    }
+
+    .bio__img {
+        height: unset;
+    }
+
+    .bio__ul {
+        width: fit-content;
+        margin: 0 auto 2rem;
+    }
+
+    .redes-sociais img {
+        width: 10%;
+        /* margin: 0 1.5rem; */
+    }
+}
+
+@media (max-width: 1000px) {
+
     .headerCorre p {
         width: 80%;
+        font-size: 3.4rem;
+        line-height: 4.2rem;
+        padding: 4rem 0 4rem;
+    }
+
+    .bio__h1 {
         font-size: 3rem;
+        margin-bottom: 2rem;
+        letter-spacing: 1rem;
     }
 }
